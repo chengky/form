@@ -259,7 +259,7 @@ function createBaseForm(option = {}, mixins = []) {
 
       setFieldsValue(fieldsValue) {
         if (onValuesChange) {
-          onValuesChange(this.props, fieldsValue);
+          onValuesChange(this.props, fieldsValue, this.fieldsStore);
         }
         const newFields = {};
         const { fieldsMeta, fields } = this.fieldsStore;
