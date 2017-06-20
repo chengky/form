@@ -245,7 +245,7 @@ function createBaseForm(option = {}, mixins = []) {
           Object.keys(fields).forEach((f) => {
             changedFields[f] = this.fieldsStore.getField(f);
           });
-          onFieldsChange(this.props, changedFields);
+          onFieldsChange(this.props, changedFields, this.fieldsStore);
         }
         this.forceUpdate();
       },
