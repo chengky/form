@@ -115,8 +115,8 @@ export createForm()(Form);
 |-----------|------------------------------------------|------------|---------|
 | formOption.validateMessages | Preseted messages of [async-validator](https://github.com/yiminghe/async-validator) | Object | {} |
 | formOption.mapProps | Get new props transfered to WrappedComponent. | (props): Object | props => props |
-| formOption.onFieldsChange | Called when field changed, you can dispatch fields to redux store. | (props, changedFields): void | NOOP |
-| formOption.onValuesChange | Called when value changed. | (props, changedValues): void | NOOP |
+| formOption.onFieldsChange | Called when field changed, you can dispatch fields to redux store. | (props, changedFields, form): void | NOOP |
+| formOption.onValuesChange | Called when value changed. | (props, changedValues, form): void | NOOP |
 | formOption.mapPropsToFields | Convert value from props to fields. Used for read fields from redux store. | (props): Object | NOOP |
 | formOption.withRef(deprecated) | Maintain an ref for wrapped component instance, use `refs.wrappedComponent` to access. | boolean | false |
 
